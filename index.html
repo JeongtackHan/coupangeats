@@ -1,282 +1,599 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>쿠팡이츠-와우회원 무료배달</title>
-  <link rel="icon" href="img/favicon.png" sizes="32x32" />
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-  <!-- Popper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>자주 묻는 질문ㅣ카카오뱅크</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.7.1/slick/slick.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.7.1/slick/slick.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.7.1/slick/slick-theme.css" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link href="css/style.css" rel="stylesheet">
-  <script>
-    $(document).ready(function(){
-      $(".slider").slick( {
-            autoplay: true,
-            autoplaySpeed: 0,
-            slidesToShow: 10,
-            slidesToScroll: 1,
-            speed:2000,
-            cssEase:"linear",
-            pauseOnFocus: true, 
-            pauseOnHover: true,
-            responsive: [
-              // {
-              //   breakpoint: 768,
-              //   settings: {
-              //     slidesToShow: 3,
-              //   }
-              // },
-              {
-                breakpoint: 576,
-                settings: {
-                  slidesToShow: 3,                  
-                }
-              }
-            ]
-  
-          } );
-    });
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>카카오뱅크 FAQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/help.css" />
+  <script src="js/script.js"></script>
 </head>
+
 <body>
-    <!-- navigation -------------------------------------------------->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-      <!-- Brand -->
-      <a class="navbar-brand" href="#"><img src="img/Eats.png" alt="로고"></a>
-    
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">배달파트너 신청</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">사장님 입점 문의</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">브랜드 스토리</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-primary" href="#" style="color:white;">앱 다운로드</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  <!-- /navigation -->
-  <!-- Main Title -------------------------------------------->
-  <div id="main" class="container-fluid">
+
+ 
+
+
+  <!-- FAQ 섹션 -->
+  <div class="cont">
+
     <div class="container">
-      <h1>쿠팡 와우회원은
-        <div>매 주문 무료배달</div>
-        <div>이제 배달비 걱정 없이 주문하세요</div>
-        <a href="#" class="btn">앱 다운로드</a>
-      </h1>
+      <h2>무엇을 도와드릴까요?</h2>
+
+
+
+      <div class="search-container">
+        <img src="../img/help/search.png" width="20" height="20">
+
+        <input type="text" class="form-control" placeholder="궁금하신 점이 있다면 검색 또는 도움말 카테고리를 선택하세요." />
+
+
+
+      </div>
+      <div class="search_span">
+        <span> # 주택담보대출</span>
+        <span> # 증명서발급</span>
+        <span> # 한도계좌해제</span>
+        <span> # 모임통장</span>
+        <span> # mini만들기</span>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- 탭 메뉴 -->
+
+
+  <div class="nav justify-content-center">
+    <ul class="nav nav-tabs" id="faqTabs">
+      <thead>
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">입출금/예적금</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">대출</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">외환</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">카드</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab5">투자</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab6">mini</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab7">사업자</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab8">ATM</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab9">제휴서비스</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab10">인증/보안</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab11">알림</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab12">앱 이용</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab13">개인금고</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab14">기타</button></li>
+    </ul>
+  </div>
+
+ 
+
+  <!-- FAQ 콘텐츠 -->
+  <div class="tab-content mt-3">
+    <!-- 탭 1 -->
+    <!-- 첫 번째 탭 -->
+    <div class="tab-pane fade show active" id="tab1">
+      <div class="accordion" id="faqAccordion1">
+
+        <!-- 첫 번째 질문 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-1">
+              [아파트관리비 자동납부] 자동납부가 해지되었다고 갑자기 메세지가 왔어요.
+            </button>
+          </h2>
+          <div id="collapse1-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body">
+              자동납부 해지 메시지는 아래의 경우 받으실 수 있습니다.
+              <p>■ 자동납부 해지 메시지를 받는 경우</p>
+              <p>· 고객님이 해당 자동납부 건을 직접 해지하신 경우</p>
+              <p>· 타인이 당행 앱에서 같은 세대의 관리비 자동납부를 신청한 경우</p>
+              <p>· 본인 혹은 타인이 다른 금융기관(은행, 카드사 등)을 통해 같은 세대의 관리비 자동납부를 신청한 경우</p>
+              <p>자동이체 해지를 원하지 않는 경우, 해당 세대로 자동납부를 다시 신청 바랍니다.</p>
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p>· 아파트관리비 납부 바로가기</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 아파트관리비 납부</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 자동이체</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 두 번째 질문 (1-2) -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-2">
+              [아파트관리비 자동납부]관리비 자동납부 알림을 끄고 싶어요.
+            </button>
+          </h2>
+          <div id="collapse1-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body">
+              관리비 자동납부 알림은 아래에서 관리하실 수 있습니다.
+              <p>■ 해지 방법</p>
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p>· 아파트관리비 납부 바로가기 </p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 아파트관리비 납부</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 자동이체 </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 세 번째 질문 (1-3) -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-3">
+              [아파트관리비 납부] 아파트관리비 납부 서비스 알림은 언제 오나요?
+            </button>
+          </h2>
+          <div id="collapse1-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body">
+              아파트관리비 납부 서비스 알림은 아래와 같습니다. 필수 알림 항목은 임의로 해지할 수 없습니다.
+              <p>■ 서비스 필수 알림</p>
+              <p>· 관리비 고지 안내</p>
+              <p>· 즉시납부 마감 예정</p>
+              <p>· 납부 마감 예정</p>
+              <p>· 자동납부 신청/해지</p>
+              <p>■ 서비스 선택 알림 (자동이체 앱푸시 설정 가능)</p>
+              <p>· 자동납부 출금예정</p>
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p>· 아파트관리비 납부 바로가기</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 아파트관리비 납부</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 자동이체</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-4">
+              [아파트관리비 납부] 아파트관리비 납부 서비스를 해지하고 싶어요.
+            </button>
+          </h2>
+          <div id="collapse1-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body">
+              아파트관리비 납부 서비스 해지는 아래와 같이 하실 수 있습니다.
+              <p>■ 서비스 해지 방법</p>
+              <p>[전체탭 > 설정 > 약관 및 이용동의 > '아파트관리비 납부' 해지하기</p>
+              <p>※ 주의사항</p>
+              <p>· 아파트아이 서비스는 아파트아이 앱에서 직접 탈퇴해주세요. (아파트아이 정책 상 탈퇴 후 30일 간 재가입 불가)
+
+              </p>
+              <p>· 아파트관리비 납부 서비스를 해지하더라도 자동납부 등록 건은 유지되니 주의해주세요.</p>
+              <p>■ 서비스 선택 알림 (자동이체 앱푸시 설정 가능)</p>
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 설정 > 약관 및 이용동의 > '아파트관리비 납부' 해지하기</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-5">
+              [아파트관리비 납부] 직접 이체 시 받는 분 표기에 동호수를 입력해야 하나요?
+            </button>
+          </h2>
+          <div id="collapse1-5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body">
+              관리사무소 계좌번호로 직접 이체 시, 관리사무소에서 동호수 정보를 확인할 수 있도록 '받는 분 표기' 항목에 동호수를 입력 바랍니다.
+
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p>· 아파트관리비 납부 바로가기</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 아파트관리비 납부</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-6">
+              [아파트관리비 납부] 직접이체 시 받는 분 표기에 동호수를 입력해야 하나요?
+            </button>
+          </h2>
+          <div id="collapse1-6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body">
+              관리사무소 계좌번호로 직접 이체 시, 관리사무소에서 동호수 정보를 확인할 수 있도록 '받는 분 표기' 항목에 동호수를 입력 바랍니다.
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p>· 아파트관리비 납부 바로가기</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 아파트관리비 납부</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-7">
+              [아파트관리비 납부] 이사를 가서 자동납부 주소를 변경하고 싶어요. 기존 자동납부 건은 자동취소되나요?
+            </button>
+          </h2>
+          <div id="collapse1-7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body">
+              이사 등의 이유로 자동납부할 주소를 변경하고 싶은 경우, 반드시 기존 자동납부 건을 해지하고 재신청해주세요.
+              <p>기존 자동납부 건을 해지하지 않으면, 이사 전 주소의 관리비가 자동납부될 수 있으니 주의 바랍니다.</p>
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p>· 아파트관리비 납부 바로가기</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 아파트관리비 납부</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 자동이체</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-8">
+              [아파트관리비 납부] 자동납부 출금된 내역을 취소할 수 있나요?
+            </button>
+          </h2>
+          <div id="collapse1-8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body">
+              이미 납부한 관리비는 카카오뱅크 앱에서 취소할 수 없습니다. 취소, 환불, 중복 납부 문의는 관리비를 납부한 아파트 관리사무소로 문의해주세요.
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p>· 아파트관리비 납부 바로가기</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 아파트관리비 납부</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 자동이체</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-9">
+              [아파트관리비 납부] 자동납부를 해지하고 싶어요.
+            </button>
+          </h2>
+          <div id="collapse1-9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+            <div class="accordion-body">
+              관리비 자동납부는 아래에서 해지할 수 있습니다.
+              <p>■ 자동납부 해지 방법</p>
+              <p>· [전체탭 > 아파트관리비 납부 > 자동납부 관리 > '해지하기' 선택]</p>
+              <p>· [전체탭 > 자동이체 화면 내 전체탭 > 해당 관리비 선택 > '해지하기' 선택]</p>
+              <p>※ 이체 목록에 이체 건이 없다면, 오른쪽 위 계좌이름을 눌러 [모두선택]으로 변경해주세요.</p>
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p>· 아파트관리비 납부 바로가기</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 아파트관리비 납부</p>
+              <p>· 홈 화면 오른쪽 하단 전체탭( ··· ) > 자동이체</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- 탭 2 -->
+    <div class="tab-pane fade" id="tab2">
+      <div class="accordion" id="faqAccordion2">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-1">
+              [주택담보대출 갈아타기]차주가 속한 세대가 카카오뱅크에 고지하지 않은 주택을 보유하고 있는 경우, 불이익이 있나요?
+            </button>
+          </h2>
+          <div id="collapse2-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body">
+              네. 고지 하지 않은 주택을 보유하고 있었던 것이 대출실행 이후에 확인되면 대출을 전액 상환해야 할 수 있습니다.
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-2">
+              [주택담보대출] 차주가 속한 세대가 카카오뱅크에 고지하지 않은 주택을 보유하고 있는 경우, 불이익이 있나요?
+            </button>
+          </h2>
+          <div id="collapse2-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body">
+              네. 고지 하지 않은 주택을 보유하고 있었던 것이 대출실행 이후에 확인되면 대출을 전액 상환해야 할 수 있습니다.
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-3">
+              [주택담보대출] 생활안정자금 대출의 최대 한도는 얼마인가요?
+            </button>
+          </h2>
+          <div id="collapse2-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body">
+              대환 목적의 경우 대환하고자 하는 기존 대출의 잔액 이내로 제한되며, 그 외 생활안정자금의 경우에는 별도 제한이 없습니다.
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-4">
+              [내 신용리포트] 제공되는 정보 관련해서 문의사항이 있어요.
+            </button>
+          </h2>
+
+
+          <div id="collapse2-5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body">
+              아래와 같은 내 신용정보 분석결과를 상세 제공하며,
+              <p>해당 정보들은 모두 NICE평가정보와의 제휴를 통해 제공합니다.</p>
+              <p>1. 내 신용점수 분석 결과 및 신용점수에 영향을 준 상세 요인 제공</p>
+              <p>2. 같은 연령대, 신용점수 구간별 대출금액 및 금리정보 제공</p>
+              <p>3. 같은 연령대의 월평균 카드 사용액과 나의 카드 사용액 비교</p>
+              <p>4. 내 추정 연소득 및 상위 % 정보 제공</p>
+              <p><strong>신용리포트 서비스로 바로 이동하기</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-6">
+              [내 신용리포트] 신용리포트는 어떻게 확인할 수 있나요?
+            </button>
+          </h2>
+          <div id="collapse2-6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body">
+              신용리포트는 카카오뱅크 2.43 버전 이상부터 제공하며, '내 신용정보' 서비스 가입고객에게 제공합니다.
+              <p>1. 내 신용정보 서비스 화면 내 '내 신용리포트' 영역 또는</p>
+              <p>2. 매월 발송되는 신용리포트 알림 통해서 확인하실 수 있습니다.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-7">
+              [내 신용리포트]신용리포트는 어떤 서비스인가요?
+            </button>
+          </h2>
+          <div id="collapse2-7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body">
+              NICE평가정보와의 제휴를 통해, 내 신용정보 분석결과를 제공하는 서비스입니다.
+              <p>내 신용점수, 내 대출금액 및 금리, 카드 사용액, 추정 연소득까지 여러 내 신용정보 분석결과를 확인해보세요.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-8">
+              [주택담보대출 갈아타기] 등기권리증을 분실한 경우 대출 신청이 가능한가요?
+            </button>
+          </h2>
+          <div id="collapse2-8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body">
+              아니요, 대출 신청이 불가합니다.
+              <p>소유권 이전이 완료된 등기필정보를 소유한 경우에만 대출(주택담보대출 갈아타기)이 가능합니다.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-9">
+              [주택담보대출] 등기권리증을 분실한 경우 대출 신청이 가능한가요?
+            </button>
+          </h2>
+          <div id="collapse2-9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body">
+              아니요, 대출 신청이 불가합니다.
+              <p>소유권 이전이 완료된 등기필정보를 소유한 경우에만 대출(주택담보대출)이 가능합니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-10">
+              [주택담보대출] 구형 등기권리증을 보유한 경우에도 대출을 받을 수 있나요?
+            </button>
+          </h2>
+          <div id="collapse2-10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+            <div class="accordion-body">
+              아니요, 카카오뱅크에서는 대출을 받으실 수 없습니다.
+              <p>일련번호와 비밀번호로 구성된 신형 등기권리증을 소지하신 경우에만 대출 신청 가능합니다.</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- 탭 3 -->
+    <div class="tab-pane fade" id="tab3">
+      <div class="accordion" id="faqAccordion3">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3-1">
+              [외환 서비스] 해외 송금 방법이 궁금해요.
+            </button>
+          </h2>
+          <div id="collapse3-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion3">
+            <div class="accordion-body">
+              구글 애드센스(광고수익금)을 처음 받아보는데 카카오뱅크로 받고 싶어요. 어떻게 받을 수 있나요?
+              <p>구글 애드센스를 처음 받을 예정이고 카카오뱅크를 이용하실 예정이라면, 구글 애드센스 계정에서 카카오뱅크 계좌를 등록하셔야 애드센스 지급금 수령이 가능합니다.</p>
+              <p>■ 구글 애드센스 수취 계좌 등록 방법</p>
+              <p>1. 구글 애드센스 계정에 로그인</p>
+              <p>2. 지급 > [결제 정보] 선택</p>
+              <p>3. 지급받을 방법 > [결제 수단 관리] 선택</p>
+              <p>4. [+결제수단 추가] 선택</p>
+              <p>5. 카카오뱅크 계좌 정보 세부입력 후, 추가 완료</p>
+              <p> - 예금주의 이름: 본인 영문이름(카카오뱅크 앱 > 내 정보의 이름과 띄어쓰기까지 동일하게 입력)</p>
+              <p> - 은행 이름: KAKAOBANK CORP</p>
+              <p> - SWIFT 은행 식별 코드(BIC): KAKOKR22XXX</p>
+              <p> - 계좌 번호: 3333으로 시작하는 본인의 입출금 계좌번호를 하이픈(-) 없이 입력</p>
+              <p> - 계좌 번호 재입력: 동일하게 한 번 더 입력
+              <p> - 중개 은행 이름: CITIBANK N.A. (필요 시 입력)
+              <p> - 중개 SWIFT 은행 식별코드(BIC): CITIUS33XXX (필요 시 입력)
+              <p> - 기본 지급수단으로 설정 체크 후 저장
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab4">
+      <div class="accordion" id="faqAccordion4">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4-1">
+              [체크카드] 체크카드 신청할 때 '부재 시 대리수령'에 동의했어요. 수령인 기준은 어떻게되나요?
+            </button>
+          </h2>
+          <div id="collapse4-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion4">
+            <div class="accordion-body">
+              체크카드 신청 시 선택한 배송지에 따라 대리수령인 기준이 상이합니다.
+              <p>· 자택 : 가족(미성년자 제외)이 대리수령</p>
+              <p>· 직장 : 직장동료가 대리수령</p>
+              <p>· 직장 : 직장동료가 대리수령</p>
+              <p>· 기타 : 가족(미성년자 제외) 또는 직장동료가 대리수령</p>
+              <p>※ 배송기사님께서 정확한 배송을 위해 카드신청인과 대리수령인의 관계를 확인하며, 미성년자 및 일반 지인에게는 배송이 거부될 수 있으니 유의해주시기 바랍니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab5">
+      <div class="accordion" id="faqAccordion5">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5-1">
+              [펀드]펀드란 무엇인가요?
+            </button>
+          </h2>
+          <div id="collapse5-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion3">
+            <div class="accordion-body">
+              펀드는 여러 사람으로부터 모은 돈을 자산운용회사가 주식 및 채권 등에 투자 · 운용한 후 그 결과를 돌려주는 간접 투자 상품입니다.
+              <p></p>
+              주식은 직접투자 상품, 펀드는 간접투자 상품으로 분류됩니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab6">
+      <div class="accordion" id="faqAccordion6">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6-1">
+              [mini] 만 14세 미만 미성년자도 우리학교 급식표/시간표를 이용할 수 있나요?
+            </button>
+          </h2>
+          <div id="collapse6-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion6">
+            <div class="accordion-body">
+              네, 해당연령(만 7세 ~ 만 13세) 고객도 우리학교 급식표/시간표를 이용할 수 있어요.
+              <p>■ 우리학교 급식표/시간표를 이용하기 전 아래 내용을 꼭 확인해 주세요.</p>
+              <p>﹒해당연령 고객 본인명의의 휴대폰이 필요해요.</p>
+              <p>﹒해당연령 고객과 보호자의 스마트폰에 카카오뱅크 앱(버전 2.28.0 이상)이 설치되어 있어야 해요.</p>
+              <p>[카카오뱅크 모바일앱 경로 안내]</p>
+              <p> · 홈 화면 오른쪽 하단 전체탭( ··· ) > 우리학교 급식표/시간표</p>
+              <p>※ 만 14세 미만 고객은 카카오뱅크 가입/이용에 보호자의 동의가 필요해요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab7">
+      <div class="accordion" id="faqAccordion7">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7-1">
+              [부가세박스]10%씩 모으기는 어떻게 실행되나요?
+            </button>
+          </h2>
+          <div id="collapse7-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion7">
+            <div class="accordion-body">
+              부가세박스에 연결된 계좌에 하루 동안 입금된 총 입금액의 10%에 해당하는 금액을
+              <p>다음날 오후 12시에 부가세박스로 자동으로 모아드립니다. </p>
+              <p> 오늘 하루 부가세박스 연결계좌에 총 100만 원 입금</p>
+              <p>→ 다음날 오후 12시에 부가세박스로 10만 원 자동 모으기 실행</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab8">
+      <div class="accordion" id="faqAccordion8">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8-1">
+              [달러박스]달러박스의 ATM 이용 한도는 어떻게 되나요?
+            </button>
+          </h2>
+          <div id="collapse8-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion8">
+            <div class="accordion-body">
+              ATM 달러출금 이용 한도는 아래와 같습니다.
+              <p>- 일 한도 : 600달러 (단, 최소 100달러부터 10달러 단위로 출금 가능)</p>
+              <p>- 월 한도 : 2,000달러</p>
+              <p>※ 미화 환산 10,000달러를 초과하는 금액을 휴대하여 출국하는 경우에는 관할 세관에 신고하여야 합니다.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab9">
+      <div class="accordion" id="faqAccordion9">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9-1">
+              [외환 서비스] 해외 송금 방법이 궁금해요.
+            </button>
+          </h2>
+          <div id="collapse3-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion9">
+            <div class="accordion-body">
+              카카오뱅크 해외 송금은 모바일 앱에서 간편하게 신청할 수 있습니다.
+              <p>■ 해외 송금 방법</p>
+              <p>1. 카카오뱅크 앱 실행</p>
+              <p>2. 외환 메뉴 선택</p>
+              <p>3. 해외 송금 옵션 선택 후 진행</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab10">
+      <div class="accordion" id="faqAccordion10">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10-1">
+              [외환 서비스] 해외 송금 방법이 궁금해요.
+            </button>
+          </h2>
+          <div id="collapse3-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion10">
+            <div class="accordion-body">
+              카카오뱅크 해외 송금은 모바일 앱에서 간편하게 신청할 수 있습니다.
+              <p>■ 해외 송금 방법</p>
+              <p>1. 카카오뱅크 앱 실행</p>
+              <p>2. 외환 메뉴 선택</p>
+              <p>3. 해외 송금 옵션 선택 후 진행</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab11">
+      <div class="accordion" id="faqAccordion11">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11-1">
+              [외환 서비스] 해외 송금 방법이 궁금해요.
+            </button>
+          </h2>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- /Main Title -->
+  </div>
+  </div>
 
-  <!-- 배달파트너 신청하기 ------------------------------------>
-  <div id="partner" class="container text-center">
-    <div class="row">
-      <div class="col-sm-4">
-        <img src="img/pic01.jpg" alt="배달파트너신청">
-        <h6>배달 파트너 신청하기</h6>
-        <div>반가워요<br>
-          즐겁고 안전한 배달 함께 해요
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <img src="img/pic02.jpg" alt="사장님입점문의">
-        <h6>사장님 입점 문의하기</h6>
-        <div>1600-9827<br>
-          쿠팡이츠로 매출을 올려보세요
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <img src="img/pic03.jpg" alt="브랜드스토리">
-        <h6>브랜드 스토리 보러가기</h6>
-        <div>쿠팡이츠의 이야기<br>
-          조금 더 자세히 알아볼까요
-        </div>
+
       </div>
     </div>
   </div>
-  <!-- /배달파트너 신청하기 -->
-
-
-  
-
-  <!-- 무료배달 ------------------------------------------------------------------>
-  <div id="delivery" class="container-fluid">
-    <div class="container">
-      <h1>
-        빠르고 정확한 쿠팡이츠<br>
-        <span>무료배달</span>로 만나보세요!
-      </h1>
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>쿠팡 와우회원</h3>
-          <h2>매 주문 무료배달</h2>
-          <div>몇 번이든,주문할 때마다<br>
-            무료로 배달해드려요
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <img src="img/pic04.jpg" alt="무료배달">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>금액 제한 없이</h3>
-          <h2>1인분도 OK</h2>
-          <div>매장 설정 최소주문금액만<br>
-            맞추면 돼요
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <img src="img/pic05.jpg" alt="와우무료배달혜택">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>할인 쿠폰 + 즉시 할인 </h3>
-          <h2>중복할인</h2>
-          <div>무료배달은 기본<br>
-            할인까지 놓치지 마세요
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <img src="img/pic06.jpg" alt="중복할인">
-        </div>
-      </div> 
-    </div>
-  </div> 
-  <!-- /무료배달 -->
-  
-  <!-- Better Eats. Better Life -------------------------------------------------->
-  <div id="better" class="container-fluid">
-    <div class="container">
-      <h1>Better Eats <br>
-        Better Life  
-        <div>
-          <a href="#">브랜드 스토리 보러가기 &gt; </a>
-        </div>
-      </h1>
-    </div>    
-  </div>
-  <!-- /Better Eats. Better Life -->
-  
-  <!-- 쿠팡이츠의 새로운 시도 --------------------------------------------------->
-  <div id="new" class="container-fluid">
-    <div class="container">
-      <h1>
-        더 좋은 경험을 위한<br>
-        <span>쿠팡이츠</span>의 새로운 시도
-      </h1>
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>포장 서비스</h3>
-          <h2>간편한 포장 &amp; 픽업</h2>
-          <div>가까운 거리는 기다림 없이<br>
-            포장 &amp; 픽업할 수 있어요
-          </div>
-        </div>
-        <div class="col-sm-6">
-         <video src="img/vid01.m4v" autoplay loop muted></video>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>쿠팡이츠가 최초</h3>
-          <h2>실시간 배달 경로 확인</h2>
-          <div>주문 수락부터 배달까지<br>
-            배달 파트너의 위치를 실시간으로 보여드려요
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <video src="img/vid02.m4v" autoplay loop muted></video>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>쿠페이 적립까지 </h3>
-          <h2>쉽고 편한 원터치 결제</h2>
-          <div>매번 복잡한 인증 절차 없이 한 번에<br>
-            안전하고 편리한 원터치 결제를 경험해보세요
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <video src="img/vid03.m4v" autoplay loop muted></video>
-        </div>
-      </div>
-    </div>
-  </div> 
-
-  <!-- /쿠팡이츠의 새로운 시도 -->
-
-  <!-- slider ------------------------------------------------------------------>
-  <div id="slider" style="padding-bottom: 50px;overflow: hidden;">
-    <div class="container">
-      <h1><span>쿠팡이츠</span>와 함께 하는 스토어</h1>
-    </div>  
-    <div class="slider">        
-        <div><img src="img/logo01.png" alt=""></div>
-        <div><img src="img/logo02.png" alt=""></div>
-        <div><img src="img/logo03.png" alt=""></div>
-        <div><img src="img/logo04.png" alt=""></div>
-        <div><img src="img/logo05.png" alt=""></div>
-        <div><img src="img/logo01.png" alt=""></div>
-        <div><img src="img/logo02.png" alt=""></div>
-        <div><img src="img/logo03.png" alt=""></div>
-        <div><img src="img/logo04.png" alt=""></div>
-        <div><img src="img/logo05.png" alt=""></div>
-        <div><img src="img/logo01.png" alt=""></div>
-        <div><img src="img/logo02.png" alt=""></div>
-        <div><img src="img/logo03.png" alt=""></div>
-        <div><img src="img/logo04.png" alt=""></div>
-        <div><img src="img/logo05.png" alt=""></div>         
-    </div>
-  </div>
-  <!-- slider-->
-  <!-- footer --------------------------------------------------------------------> 
-  <footer class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2">사업/제휴 문의하기</div>
-        <div class="col-sm-2">광고/마케팅 문의하기</div>
-        <div class="col-sm-2">쿠폰대량신청하기</div>
-        <div class="col-sm-6">Seak Up채널/Ethics 웹사이트</div>
-      </div>
-      <div class="row">
-        <di class="col-sm-12">
-          <i class="fa fa-instagram instagram-icon"></i>
-        </di>
-      </div>
-      <div>쿠팡(주) | 대표이사 박재준</div>
-      <div>사업자등록번호: 120-88-00767  |  통신판매업신고 : 2017-서울 송파-0680 서울시 송파구 송파대로570  |  쿠팡이츠 고객센터 1670-9827</div>
-      <div id="splash">
-        <img src="img/Splash-1.png" alt="쿠팡이츠로고">
-      </div>
-    </div>
-  </footer>
-  <!-- footer -->
 </body>
+
 </html>
